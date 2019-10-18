@@ -12,7 +12,7 @@ public class Customer {
     @Size(min = 2)
     private String firstName;
     private String lastName;
-    @Email
+    @Email(message = "{org.agoncal.book.javaee7.chapter03.Email.message}")
     private String email;
     private String phoneNumber;
     @Past
